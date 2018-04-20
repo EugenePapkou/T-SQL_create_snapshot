@@ -1,5 +1,3 @@
-/*alter database test set partner force_service_allow_data_loss*/
-
 create database test_snapshot 
 	on
 		(name = testdata_a,
