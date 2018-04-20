@@ -1,0 +1,10 @@
+/*alter database test set partner force_service_allow_data_loss*/
+
+create database test_snapshot 
+	on
+		(name = testdata_a,
+		filename = 'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\testdata_a.ss'),
+		(name = testdata_b,
+		filename = 'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\testdata_b.ss')
+	
+	as snapshot of test
